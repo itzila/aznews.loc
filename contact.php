@@ -1,4 +1,5 @@
-<?php require_once ("./elements/header.php"); ?>
+<?php require_once './function/get_ware.php'; ?>
+<?php require_once './elements/header.php'; ?>
 
     <!-- ================ contact section start ================= -->
     <section class="contact-section">
@@ -49,7 +50,9 @@
                     <div class="col-12">
                         <h2 class="contact-title">Get in Touch</h2>
                     </div>
-                    <?php require_once ("./elements/contact_form.php")?>
+                    <div class="col-lg-8">
+                        <?php require_once './elements/contact_form.php'; ?>
+                    </div>
                     <div class="col-lg-3 offset-lg-1">
                         <div class="media contact-info">
                             <span class="contact-info__icon"><i class="ti-home"></i></span>
@@ -78,4 +81,4 @@
     </section>
     <!-- ================ contact section end ================= -->
 
-<?php require_once ("./elements/footer.php")?>
+<?php require_once './elements/footer.php'; ?>

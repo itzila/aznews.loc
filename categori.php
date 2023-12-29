@@ -1,7 +1,18 @@
-<?php require_once ("./elements/header.php"); ?>
+<?php require_once './function/get_ware.php'; ?>
+<?php require_once './elements/header.php'; ?>
 
     <main>
-        <?php require_once("./elements/whats_new.php") ?>
+   <!-- Whats New Start -->
+    <section class="whats-news-area pt-50 pb-20">
+        <div class="container">
+            <div class="row">
+            <?php require_once './elements/wats_new.php'; ?>
+            <?php require_once './elements/follow_us.php'; ?>
+            </div>
+        </div>
+    </section>
+    <!-- Whats New End -->
+
 
     <!--Start pagination -->
     <div class="pagination-area pb-45 text-center">
@@ -25,5 +36,5 @@
     </div>
     <!-- End pagination  -->
     </main>
-
-<?php require_once ("./elements/footer.php")?>
+    
+<?php require_once './elements/footer.php'; ?>

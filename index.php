@@ -1,6 +1,11 @@
-<?php require_once ("./elements/header.php"); ?>
-
+<?php require_once './function/get_ware.php'; ?>
+<?php require_once './elements/header.php'; ?>
     <main>
+        <?php foreach ($connect->query('SELECT * FROM posts;') as $row): ?>
+            <pre>
+                <?php var_dump($row); ?>
+            </pre>
+        <?php endforeach; ?>
     <!-- Trending Area Start -->
     <div class="trending-area fix">
         <div class="container">
@@ -30,7 +35,7 @@
                                 <img src="assets/img/trending/trending_top.jpg" alt="">
                                 <div class="trend-top-cap">
                                     <span>Appetizers</span>
-                                    <h2><a href="details.php">Welcome To The Best Model Winner<br> Contest At Look of the year</a></h2>
+                                    <h2><a href="details.html">Welcome To The Best Model Winner<br> Contest At Look of the year</a></h2>
                                 </div>
                             </div>
                         </div>
@@ -44,7 +49,7 @@
                                     </div>
                                     <div class="trend-bottom-cap">
                                         <span class="color1">Lifestyple</span>
-                                        <h4><a href="details.php">Get the Illusion of Fuller Lashes by “Mascng.”</a></h4>
+                                        <h4><a href="details.html">Get the Illusion of Fuller Lashes by “Mascng.”</a></h4>
                                     </div>
                                 </div>
                                 </div>
@@ -55,7 +60,7 @@
                                         </div>
                                         <div class="trend-bottom-cap">
                                             <span class="color2">Sports</span>
-                                            <h4><h4><a href="details.php">Get the Illusion of Fuller Lashes by “Mascng.”</a></h4></h4>
+                                            <h4><h4><a href="details.html">Get the Illusion of Fuller Lashes by “Mascng.”</a></h4></h4>
                                         </div>
                                     </div>
                                 </div>
@@ -66,7 +71,7 @@
                                         </div>
                                         <div class="trend-bottom-cap">
                                             <span class="color3">Travels</span>
-                                            <h4><a href="details.php"> Welcome To The Best Model Winner Contest</a></h4>
+                                            <h4><a href="details.html"> Welcome To The Best Model Winner Contest</a></h4>
                                         </div>
                                     </div>
                                 </div>
@@ -81,7 +86,7 @@
                             </div>
                             <div class="trand-right-cap">
                                 <span class="color1">Concert</span>
-                                <h4><a href="details.php">Welcome To The Best Model Winner Contest</a></h4>
+                                <h4><a href="details.html">Welcome To The Best Model Winner Contest</a></h4>
                             </div>
                         </div>
                         <div class="trand-right-single d-flex">
@@ -90,7 +95,7 @@
                             </div>
                             <div class="trand-right-cap">
                                 <span class="color3">sea beach</span>
-                                <h4><a href="details.php">Welcome To The Best Model Winner Contest</a></h4>
+                                <h4><a href="details.html">Welcome To The Best Model Winner Contest</a></h4>
                             </div>
                         </div>
                         <div class="trand-right-single d-flex">
@@ -99,7 +104,7 @@
                             </div>
                             <div class="trand-right-cap">
                                 <span class="color2">Bike Show</span>
-                                <h4><a href="details.php">Welcome To The Best Model Winner Contest</a></h4>
+                                <h4><a href="details.html">Welcome To The Best Model Winner Contest</a></h4>
                             </div>
                         </div> 
                         <div class="trand-right-single d-flex">
@@ -108,7 +113,7 @@
                             </div>
                             <div class="trand-right-cap">
                                 <span class="color4">See beach</span>
-                                <h4><a href="details.php">Welcome To The Best Model Winner Contest</a></h4>
+                                <h4><a href="details.html">Welcome To The Best Model Winner Contest</a></h4>
                             </div>
                         </div>
                         <div class="trand-right-single d-flex">
@@ -117,7 +122,7 @@
                             </div>
                             <div class="trand-right-cap">
                                 <span class="color1">Skeping</span>
-                                <h4><a href="details.php">Welcome To The Best Model Winner Contest</a></h4>
+                                <h4><a href="details.html">Welcome To The Best Model Winner Contest</a></h4>
                             </div>
                         </div>
                     </div>
@@ -184,7 +189,16 @@
         </div>
     </div>           
     <!-- End Weekly-News -->
-        <?php require_once("./elements/whats_new.php") ?>
+   <!-- Whats New Start -->
+    <section class="whats-news-area pt-50 pb-20">
+        <div class="container">
+            <div class="row">
+            <?php require_once './elements/wats_new.php'; ?>
+            <?php require_once './elements/follow_us.php'; ?>
+            </div>
+        </div>
+    </section>
+    <!-- Whats New End -->
     <!--   Weekly2-News start -->
     <div class="weekly2-news-area  weekly2-pading gray-bg">
         <div class="container">
@@ -416,4 +430,4 @@
     <!-- End pagination  -->
     </main>
     
-<?php require_once ("./elements/footer.php")?>
+<?php require_once './elements/footer.php'; ?>

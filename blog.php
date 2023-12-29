@@ -1,4 +1,5 @@
-<?php require_once ("./elements/header.php"); ?>
+<?php require_once './function/get_ware.php'; ?>
+<?php require_once './elements/header.php'; ?>
 
     <!--================Blog Area =================-->
     <section class="blog_area section-padding">
@@ -16,7 +17,7 @@
                             </div>
 
                             <div class="blog_details">
-                                <a class="d-inline-block" href="single-blog.php">
+                                <a class="d-inline-block" href="single-blog.html">
                                     <h2>Google inks pact for new 35-storey office</h2>
                                 </a>
                                 <p>That dominion stars lights dominion divide years for fourth have don't stars is that
@@ -38,7 +39,7 @@
                             </div>
 
                             <div class="blog_details">
-                                <a class="d-inline-block" href="single-blog.php">
+                                <a class="d-inline-block" href="single-blog.html">
                                     <h2>Google inks pact for new 35-storey office</h2>
                                 </a>
                                 <p>That dominion stars lights dominion divide years for fourth have don't stars is that
@@ -60,7 +61,7 @@
                             </div>
 
                             <div class="blog_details">
-                                <a class="d-inline-block" href="single-blog.php">
+                                <a class="d-inline-block" href="single-blog.html">
                                     <h2>Google inks pact for new 35-storey office</h2>
                                 </a>
                                 <p>That dominion stars lights dominion divide years for fourth have don't stars is that
@@ -82,7 +83,7 @@
                             </div>
 
                             <div class="blog_details">
-                                <a class="d-inline-block" href="single-blog.php">
+                                <a class="d-inline-block" href="single-blog.html">
                                     <h2>Google inks pact for new 35-storey office</h2>
                                 </a>
                                 <p>That dominion stars lights dominion divide years for fourth have don't stars is that
@@ -104,7 +105,7 @@
                             </div>
 
                             <div class="blog_details">
-                                <a class="d-inline-block" href="single-blog.php">
+                                <a class="d-inline-block" href="single-blog.html">
                                     <h2>Google inks pact for new 35-storey office</h2>
                                 </a>
                                 <p>That dominion stars lights dominion divide years for fourth have don't stars is that
@@ -138,10 +139,10 @@
                         </nav>
                     </div>
                 </div>
-                <?php require_once("./elements/sidebar.php") ?>
+                <?php require_once './elements/sidebar.php'; ?>
             </div>
         </div>
     </section>
     <!--================Blog Area =================-->
 
-<?php require_once ("./elements/footer.php")?>
+<?php require_once './elements/footer.php'; ?>
